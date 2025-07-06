@@ -33,7 +33,7 @@ final class CFTShiftTests: XCTestCase {
         }
     }
     
-    func test_FaileвValidationDataForRegistration() {
+    func test_FailedValidationDataForRegistration() {
         let vm = RegistrationViewModel(registrationUseCase: RegisterDI.makeUseCase())
         
         let errorMessage = vm.validateAndSaveUser(name: "K", surname: "K", password: "K", confirmPassword: "K")
